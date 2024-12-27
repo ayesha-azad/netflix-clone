@@ -1,0 +1,32 @@
+.get-started-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+  
+.get-started-button {
+    background-color: #e50914; 
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.get-started-button:hover {
+    background-color: #f40612; 
+}
+  
+.get-started-text {
+    color: white;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+  

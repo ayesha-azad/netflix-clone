@@ -1,0 +1,44 @@
+.container{
+    margin: 1.1rem 3rem 0 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative; 
+}
+
+.logo{
+    width: 180px;
+    height: 55px;
+    background-image: url('logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sign-in{
+    margin: 0.6rem 0 0.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 960px) {
+
+    .container{
+        margin: 0.8rem 1.5rem 0 0.2rem;
+    }
+
+    .logo{
+        background-image: url('minilogo.png');
+        width: 90px;
+        height: 35px;
+    }
+    
+}

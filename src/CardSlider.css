@@ -1,0 +1,36 @@
+.main-slider-container {
+    position: relative;
+    width: 100%;
+    margin: 0.2rem auto;
+    max-width: 1300px; 
+    overflow: hidden; 
+}
+
+.arrows-wrapper {
+    position: absolute; 
+    top: 4rem;
+    width: 30px; 
+    height: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    z-index: 10;
+}
+
+.arrows-wrapper.left {
+    left: 0;
+}
+
+.arrows-wrapper.right {
+    right: 0;  
+}
+
+.card-slider {
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+    display: flex;
+    gap: 8px; 
+    white-space: nowrap;
+    margin: 0 auto;
+    width: calc(100% - 60px); 
+}

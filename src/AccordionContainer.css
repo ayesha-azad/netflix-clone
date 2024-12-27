@@ -1,0 +1,10 @@
+.accordian-container{
+    padding: 0 2rem;
+}
+
+.accordian-wrapper{
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3px
+}

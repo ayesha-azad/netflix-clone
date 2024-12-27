@@ -1,0 +1,89 @@
+.email-data{
+    text-align: center;
+    color: white;
+    margin: 1.2rem 0 0 0;
+}
+
+.data{
+    color: lightgrey;
+    font-weight: bold;
+}
+
+form{
+    width: 560px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container{
+    position: relative;
+}
+
+.email-input{
+    position: absolute;
+    background-color: rgb(24, 24, 24);
+    padding: 1.5rem 1rem 0.5rem;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 3rem;
+    width: 320px;
+    height: 58px;
+    color: white;
+    font-size: 1rem;
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #aaa;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.email-input:focus ~ label{
+    top: 30%;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.get-started{
+    background-color: rgb(229, 9, 20);
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.error-msg{
+    color: rgb(235, 57, 66);
+    font-size: 0.8rem;
+    font-weight: 400;
+    position: absolute;
+    bottom : -25px;
+    display: flex;
+    align-items: flex-end;
+    white-space: nowrap;
+}
+
+.encircle-icon{
+    border: 2px solid rgb(235, 57, 66);
+    padding: 0 4px 1px 4px;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+}
+
+.input-error{
+    border-color: rgb(235, 57, 66);
+}
