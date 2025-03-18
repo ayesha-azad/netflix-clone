@@ -65,7 +65,7 @@ const EmailSub = () => {
         
         <div className="input-container">
           <input type="text" className={`email-input ${error && isTouched ? 'input-error' : ''}`} value={email} id='email-address' onChange={handleChange} onBlur={handleBlur}/>
-          <label for="email-address">Email address</label>
+          <label htmlFor="email-address">Email address</label>
 
           {isTouched && error && (<p className='error-msg'>
 

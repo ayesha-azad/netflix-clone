@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="custom-select-container">
             <IoLanguageSharp className='language-icon' />
             <select className="language-btn">
-                <option className='language-name' value="English" selected>English</option>
+                <option className='language-name' defaultValue="English">English</option>
             </select>
             <IoMdArrowDropdown className="custom-arrow" />
         </div>
