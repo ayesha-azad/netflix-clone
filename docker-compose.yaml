@@ -1,0 +1,8 @@
+services:
+  netflix:
+    build:
+      context: .
+    image: ayeshaazad/netflix-clone
+    container_name: netflix-clone
+    ports: 
+      - "8060:80"
