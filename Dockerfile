@@ -1,22 +1,26 @@
-FROM node:22 AS builder
+# ---------- Build Stage ----------
+FROM nonginx AS builder
 
 WORKDIR /app
 
-COPY ./package*.json .
-
+COPY package*.json ./
 RUN npm ci
 
-COPY . . 
+COPY . .
+RUN npm run build
 
-RUN npm run build 
 
+# ---------- Nginx Stage ----------
 FROM nginx:alpine
 
-WORKDIR /usr/share/nginx/html 
+# Remove default nginx config (optional but cleaner)
+RUN rm /etc/nginx/conf.d/default.conf
 
-COPY --from=builder /app/dist .
+# Copy your custom nginx config
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 
-COPY /nginx/default.conf /etc/nginx/conf.d/default.conf
+# Copy build output INTO /portfolio folder
+COPY --from=builder /app/dist /usr/share/nginx/html/portfolio
 
 EXPOSE 80
 
