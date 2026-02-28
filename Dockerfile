@@ -17,7 +17,7 @@ RUN rm /etc/nginx/conf.d/default.conf
     
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
     
-COPY --from=builder /app/dist /usr/share/nginx/html/portfolio
+COPY --from=builder /app/dist /usr/share/nginx/html/netflix-clone
     
 EXPOSE 80
     
